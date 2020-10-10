@@ -1,0 +1,10 @@
+C:\Users\goyal\source\repos\semanticML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\goyal\source\repos\semanticML.Model\bin\Debug\netstandard2.0\semanticML.Model.deps.json
+C:\Users\goyal\source\repos\semanticML.Model\bin\Debug\netstandard2.0\semanticML.Model.dll
+C:\Users\goyal\source\repos\semanticML.Model\bin\Debug\netstandard2.0\semanticML.Model.pdb
+C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.csprojAssemblyReference.cache
+C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.AssemblyInfoInputs.cache
+C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.AssemblyInfo.cs
+C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.csproj.CoreCompileInputs.cache
+C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.dll
+C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.pdb

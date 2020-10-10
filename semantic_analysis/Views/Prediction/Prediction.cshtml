@@ -1,0 +1,40 @@
+﻿@model SemanticML.Model.ModelInput
+@{
+    ViewData["Title"] = "Prediction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Semantic Prediction Analysis</h2>
+
+<hr />
+
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Prediction">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label asp-for="Feedbacktext" class="control-label">Feedbacktext</label>
+                    <input asp-for="Feedbacktext" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group col-md-4 text-left">
+                <label class="control-label"></label>
+                <input type="submit" value="Prediction" class="btn btn-primary" />
+            </div>
+        </form>
+        <hr />
+    </div>
+
+</div>
+
+
+@if (ViewBag.Result != null)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="color:#a50f0f">Final Prediction :@ViewBag.Result.Prediction  </h1>
+        </div>
+    </div>
+    <hr />
+
+}  
