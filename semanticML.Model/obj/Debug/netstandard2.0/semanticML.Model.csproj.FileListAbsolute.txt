@@ -8,3 +8,12 @@ C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML
 C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.csproj.CoreCompileInputs.cache
 C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.dll
 C:\Users\goyal\source\repos\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.pdb
+E:\codebase\dotNetProjects\semanticML.Model\bin\Debug\netstandard2.0\semanticML.Model.deps.json
+E:\codebase\dotNetProjects\semanticML.Model\bin\Debug\netstandard2.0\semanticML.Model.dll
+E:\codebase\dotNetProjects\semanticML.Model\bin\Debug\netstandard2.0\semanticML.Model.pdb
+E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.csprojAssemblyReference.cache
+E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.AssemblyInfoInputs.cache
+E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.AssemblyInfo.cs
+E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.csproj.CoreCompileInputs.cache
+E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.dll
+E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.pdb

@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\goyal\\source\\repos\\semantic\\semantic.csproj": {}
+    "E:\\codebase\\dotNetProjects\\semantic_analysis\\semantic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\goyal\\source\\repos\\semanticML.Model\\semanticML.Model.csproj": {
+    "E:\\codebase\\dotNetProjects\\semanticML.Model\\semanticML.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\goyal\\source\\repos\\semanticML.Model\\semanticML.Model.csproj",
+        "projectUniqueName": "E:\\codebase\\dotNetProjects\\semanticML.Model\\semanticML.Model.csproj",
         "projectName": "semanticML.Model",
-        "projectPath": "C:\\Users\\goyal\\source\\repos\\semanticML.Model\\semanticML.Model.csproj",
+        "projectPath": "E:\\codebase\\dotNetProjects\\semanticML.Model\\semanticML.Model.csproj",
         "packagesPath": "C:\\Users\\goyal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\goyal\\source\\repos\\semanticML.Model\\obj\\",
+        "outputPath": "E:\\codebase\\dotNetProjects\\semanticML.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\goyal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -68,23 +66,21 @@
         }
       }
     },
-    "C:\\Users\\goyal\\source\\repos\\semantic\\semantic.csproj": {
+    "E:\\codebase\\dotNetProjects\\semantic_analysis\\semantic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\goyal\\source\\repos\\semantic\\semantic.csproj",
+        "projectUniqueName": "E:\\codebase\\dotNetProjects\\semantic_analysis\\semantic.csproj",
         "projectName": "semantic",
-        "projectPath": "C:\\Users\\goyal\\source\\repos\\semantic\\semantic.csproj",
+        "projectPath": "E:\\codebase\\dotNetProjects\\semantic_analysis\\semantic.csproj",
         "packagesPath": "C:\\Users\\goyal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\goyal\\source\\repos\\semantic\\obj\\",
+        "outputPath": "E:\\codebase\\dotNetProjects\\semantic_analysis\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\goyal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -96,8 +92,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\goyal\\source\\repos\\semanticML.Model\\semanticML.Model.csproj": {
-                "projectPath": "C:\\Users\\goyal\\source\\repos\\semanticML.Model\\semanticML.Model.csproj"
+              "E:\\codebase\\dotNetProjects\\semanticML.Model\\semanticML.Model.csproj": {
+                "projectPath": "E:\\codebase\\dotNetProjects\\semanticML.Model\\semanticML.Model.csproj"
               }
             }
           }

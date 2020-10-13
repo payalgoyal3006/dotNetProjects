@@ -9,6 +9,7 @@ using SemanticML.Model;
 
 namespace semantic.Controllers
 {
+    
     public class PredictionController : Controller
     {
         [HttpGet]
@@ -19,10 +20,12 @@ namespace semantic.Controllers
 
         [HttpPost]
         public ActionResult Prediction(ModelInput input)
-        {
+        {           
             ViewBag.Result = "";
             var predictions = ConsumeModel.Predict(input);
+           
             ViewBag.Result = predictions;
+
 
             ViewData["Feedbacktext"] = input.Feedbacktext;
 

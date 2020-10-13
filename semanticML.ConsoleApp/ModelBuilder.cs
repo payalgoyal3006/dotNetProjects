@@ -10,9 +10,14 @@ using SemanticML.Model;
 
 namespace SemanticML.ConsoleApp
 {
+
+   
     public static class ModelBuilder
     {
-        private static string TRAIN_DATA_FILEPATH = @"C:\Users\goyal\Documents\TrainingData.csv";
+        
+
+
+        private static string TRAIN_DATA_FILEPATH = "TrainingData.csv";
         private static string MODEL_FILE = ConsumeModel.MLNetModelPath;
 
         // Create MLContext to be shared across the model creation workflow objects 

@@ -1,0 +1,15 @@
+Feedbacktext	value
+this is good	TRUE
+this is bad	FALSE
+horrible	FALSE
+terrible	FALSE
+good and nice	TRUE
+so nice	TRUE
+so bad	FALSE
+ok ok good	TRUE
+yucks	FALSE
+yucks and horrible	FALSE
+amazing	TRUE
+awesome	TRUE
+sweet	TRUE
+sweet and awesome	TRUE

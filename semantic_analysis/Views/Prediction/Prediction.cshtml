@@ -32,7 +32,26 @@
 {
     <div class="row">
         <div class="col-md-12">
-            <h1 style="color:#a50f0f">Final Prediction :@ViewBag.Result.Prediction  </h1>
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                }
+
+                th, td {
+                    padding: 10px;
+                }
+            </style>
+            <table >
+                <tr>
+                    <th> Predicted value </th>
+                    <th> Percentage </th>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Result.Prediction</td>
+                    <td></td>
+                </tr>
+            </table>
+           
         </div>
     </div>
     <hr />

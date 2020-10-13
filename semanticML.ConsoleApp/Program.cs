@@ -2,6 +2,7 @@
 
 using System;
 using SemanticML.Model;
+using System.Collections.Generic;
 
 namespace SemanticML.ConsoleApp
 {
@@ -9,6 +10,10 @@ namespace SemanticML.ConsoleApp
     {
         static void Main(string[] args)
         {
+           
+
+
+
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {

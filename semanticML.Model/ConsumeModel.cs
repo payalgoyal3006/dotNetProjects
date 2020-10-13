@@ -14,7 +14,7 @@ namespace SemanticML.Model
     {
         private static Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictionEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(CreatePredictionEngine);
 
-        public static string MLNetModelPath = @"C:\Users\goyal\source\repos\semanticML.Model\MLModel.zip";
+        public static string MLNetModelPath = @"Data\MLModel.zip";
 
         // For more info on consuming ML.NET models, visit https://aka.ms/mlnet-consume
         // Method for consuming model in your app
