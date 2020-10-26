@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covid_Vaccine_Distribution", "Covid_Vaccine_Distribution.csproj", "{BC895D89-1A0E-420A-AC68-F64566191042}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Covid_Vaccine_DistributionML.Model", "..\Covid_Vaccine_DistributionML.Model\Covid_Vaccine_DistributionML.Model.csproj", "{6463515C-FD26-4CD4-AA38-4A4A2390F824}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Covid_Vaccine_DistributionML.ConsoleApp", "..\Covid_Vaccine_DistributionML.ConsoleApp\Covid_Vaccine_DistributionML.ConsoleApp.csproj", "{CA78EA27-84E3-4333-9988-5ECA5740934D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC895D89-1A0E-420A-AC68-F64566191042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC895D89-1A0E-420A-AC68-F64566191042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC895D89-1A0E-420A-AC68-F64566191042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC895D89-1A0E-420A-AC68-F64566191042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6463515C-FD26-4CD4-AA38-4A4A2390F824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6463515C-FD26-4CD4-AA38-4A4A2390F824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6463515C-FD26-4CD4-AA38-4A4A2390F824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6463515C-FD26-4CD4-AA38-4A4A2390F824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA78EA27-84E3-4333-9988-5ECA5740934D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA78EA27-84E3-4333-9988-5ECA5740934D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA78EA27-84E3-4333-9988-5ECA5740934D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA78EA27-84E3-4333-9988-5ECA5740934D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F73A1EC9-6522-43E8-8BBB-02F97EB6286A}
+	EndGlobalSection
+EndGlobal

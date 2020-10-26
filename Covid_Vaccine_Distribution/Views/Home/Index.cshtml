@@ -1,0 +1,53 @@
+﻿@model Covid_Vaccine_DistributionML.Model.ModelInput;
+
+@{
+    ViewData["Title"] = "vaccine prediction Using ML.NET";
+}
+
+<h2>Price Prediction using ML.NET</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Price">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Stname" class="control-label"></label>
+                <select asp-for="Stname" class="form-control">
+                    <option value="delhi">Delhi</option>
+                    <option value="UP">Utter Pradesh</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="MH">Maharastra</option>
+                    <option value="PB">Punjab</option>
+                </select>
+                <span asp-validation-for="Stcase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stcase" class="control-label"></label>
+                <input asp-for="Stcase" class="form-control" />
+                <span asp-validation-for="Stcase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tovac" class="control-label"></label>
+                <input asp-for="Tovac" class="form-control" />
+                <span asp-validation-for="Stcase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Check" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-offset-2 col-md-4">
+        @if (ViewBag.Vaccine != null)
+        {
+            <h1>Result</h1>
+            <h2>Vaccine Count :@ViewBag.Vaccine</h2>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}  
