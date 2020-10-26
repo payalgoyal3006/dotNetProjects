@@ -13,8 +13,8 @@ namespace Covid_Vaccine_DistributionML.ConsoleApp
             ModelInput sampleData = new ModelInput()
             {
                 Stname = @"delhi",
-                Stcase = 200F,
-                Tovac = 500F,
+                Stcase = 100F,
+                Tovac = 900F,
             };
 
             // Make a single prediction on the sample data and print results

@@ -7,6 +7,8 @@ namespace Covid_Vaccine_DistributionML.Model
 {
     public class ModelOutput
     {
+
+
         public float Score { get; set; }
     }
 }
