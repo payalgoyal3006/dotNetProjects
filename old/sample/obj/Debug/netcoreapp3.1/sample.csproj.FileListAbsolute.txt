@@ -1,0 +1,10 @@
+C:\Users\goyal\source\repos\sample\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\goyal\source\repos\sample\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\goyal\source\repos\sample\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\goyal\source\repos\sample\bin\Debug\netcoreapp3.1\sample.exe
+C:\Users\goyal\source\repos\sample\obj\Debug\netcoreapp3.1\sample.csprojAssemblyReference.cache
+C:\Users\goyal\source\repos\sample\obj\Debug\netcoreapp3.1\sample.AssemblyInfoInputs.cache
+C:\Users\goyal\source\repos\sample\obj\Debug\netcoreapp3.1\sample.AssemblyInfo.cs
+C:\Users\goyal\source\repos\sample\obj\Debug\netcoreapp3.1\sample.RazorTargetAssemblyInfo.cache
+C:\Users\goyal\source\repos\sample\obj\Debug\netcoreapp3.1\staticwebassets\sample.StaticWebAssets.Manifest.cache
+C:\Users\goyal\source\repos\sample\obj\Debug\netcoreapp3.1\staticwebassets\sample.StaticWebAssets.xml

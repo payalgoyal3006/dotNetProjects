@@ -1,0 +1,10 @@
+C:\Users\goyal\source\repos\WebApplication4ML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\goyal\source\repos\WebApplication4ML.Model\bin\Debug\netstandard2.0\WebApplication4ML.Model.deps.json
+C:\Users\goyal\source\repos\WebApplication4ML.Model\bin\Debug\netstandard2.0\WebApplication4ML.Model.dll
+C:\Users\goyal\source\repos\WebApplication4ML.Model\bin\Debug\netstandard2.0\WebApplication4ML.Model.pdb
+C:\Users\goyal\source\repos\WebApplication4ML.Model\obj\Debug\netstandard2.0\WebApplication4ML.Model.csprojAssemblyReference.cache
+C:\Users\goyal\source\repos\WebApplication4ML.Model\obj\Debug\netstandard2.0\WebApplication4ML.Model.AssemblyInfoInputs.cache
+C:\Users\goyal\source\repos\WebApplication4ML.Model\obj\Debug\netstandard2.0\WebApplication4ML.Model.AssemblyInfo.cs
+C:\Users\goyal\source\repos\WebApplication4ML.Model\obj\Debug\netstandard2.0\WebApplication4ML.Model.csproj.CoreCompileInputs.cache
+C:\Users\goyal\source\repos\WebApplication4ML.Model\obj\Debug\netstandard2.0\WebApplication4ML.Model.dll
+C:\Users\goyal\source\repos\WebApplication4ML.Model\obj\Debug\netstandard2.0\WebApplication4ML.Model.pdb

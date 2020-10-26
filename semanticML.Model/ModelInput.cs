@@ -11,7 +11,19 @@ namespace SemanticML.Model
 
 
         [ColumnName("value"), LoadColumn(1)]
-        public string Value { get; set; }
+        public bool Value { get; set; }
+
+
+        [ColumnName("total feedback"), LoadColumn(2)]
+        public float Total_feedback { get; set; }
+
+
+        [ColumnName("no_acc_word"), LoadColumn(3)]
+        public float No_acc_word { get; set; }
+
+
+        [ColumnName("Percent"), LoadColumn(4)]
+        public string Percent { get; set; }
 
 
     }

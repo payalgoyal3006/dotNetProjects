@@ -11,8 +11,6 @@ namespace SemanticML.Model
         // its default value, which is the name of the field.
         [ColumnName("PredictedLabel")]
         public String Prediction { get; set; }
-        public float Probability { get; set; }
-
         public float[] Score { get; set; }
     }
 }

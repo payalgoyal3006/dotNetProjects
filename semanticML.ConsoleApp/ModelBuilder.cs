@@ -10,14 +10,9 @@ using SemanticML.Model;
 
 namespace SemanticML.ConsoleApp
 {
-
-   
     public static class ModelBuilder
     {
-        
-
-
-        private static string TRAIN_DATA_FILEPATH = "TrainingData.csv";
+        private static string TRAIN_DATA_FILEPATH = @"C:\Users\goyal\Documents\TrainingData_updated.csv";
         private static string MODEL_FILE = ConsumeModel.MLNetModelPath;
 
         // Create MLContext to be shared across the model creation workflow objects 
@@ -50,13 +45,14 @@ namespace SemanticML.ConsoleApp
         public static IEstimator<ITransformer> BuildTrainingPipeline(MLContext mlContext)
         {
             // Data process configuration with pipeline data transformations 
-            var dataProcessPipeline = mlContext.Transforms.Conversion.MapValueToKey("value", "value")
+            var dataProcessPipeline = mlContext.Transforms.Conversion.MapValueToKey("Percent", "Percent")
+                                      .Append(mlContext.Transforms.Conversion.ConvertType(new[] { new InputOutputColumnPair("value", "value") }))
                                       .Append(mlContext.Transforms.Text.FeaturizeText("Feedbacktext_tf", "Feedbacktext"))
-                                      .Append(mlContext.Transforms.CopyColumns("Features", "Feedbacktext_tf"))
+                                      .Append(mlContext.Transforms.Concatenate("Features", new[] { "value", "Feedbacktext_tf", "total feedback", "no_acc_word" }))
                                       .Append(mlContext.Transforms.NormalizeMinMax("Features", "Features"))
                                       .AppendCacheCheckpoint(mlContext);
             // Set the training algorithm 
-            var trainer = mlContext.MulticlassClassification.Trainers.SdcaMaximumEntropy(labelColumnName: "value", featureColumnName: "Features")
+            var trainer = mlContext.MulticlassClassification.Trainers.OneVersusAll(mlContext.BinaryClassification.Trainers.AveragedPerceptron(labelColumnName: "Percent", numberOfIterations: 10, featureColumnName: "Features"), labelColumnName: "Percent")
                                       .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel", "PredictedLabel"));
 
             var trainingPipeline = dataProcessPipeline.Append(trainer);
@@ -79,7 +75,7 @@ namespace SemanticML.ConsoleApp
             // Cross-Validate with single dataset (since we don't have two datasets, one for training and for evaluate)
             // in order to evaluate and get the model's accuracy metrics
             Console.WriteLine("=============== Cross-validating to get model's accuracy metrics ===============");
-            var crossValidationResults = mlContext.MulticlassClassification.CrossValidate(trainingDataView, trainingPipeline, numberOfFolds: 5, labelColumnName: "value");
+            var crossValidationResults = mlContext.MulticlassClassification.CrossValidate(trainingDataView, trainingPipeline, numberOfFolds: 5, labelColumnName: "Percent");
             PrintMulticlassClassificationFoldsAverageMetrics(crossValidationResults);
         }
 

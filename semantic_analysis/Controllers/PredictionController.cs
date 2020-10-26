@@ -15,6 +15,9 @@ namespace semantic.Controllers
         [HttpGet]
         public IActionResult Prediction()
         {
+
+
+
             return View();
         }
 
@@ -26,8 +29,12 @@ namespace semantic.Controllers
            
             ViewBag.Result = predictions;
 
-
+            
             ViewData["Feedbacktext"] = input.Feedbacktext;
+
+            ViewData["value"] = input.Value;
+
+            ViewData["Total"] = input.Total_feedback;
 
             return View();
         }

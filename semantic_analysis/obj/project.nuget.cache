@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HqtSBze3wjXWs9r7/iEFh8DVxWkz0CZrgWOoiZUrflTyi3AtycJWhbNl79GAlqbhJ/bgApjnE/SrnnQoU7InDg==",
+  "dgSpecHash": "kpVzcXEuQ9VKd1LXGLPOc2wJZ3yWeNvmey5VyRyBKVUuTZGM0ZyQWneZELHU8Gx7YNPcbEVOhyfo7FbTAYUlwA==",
   "success": true,
   "projectFilePath": "E:\\codebase\\dotNetProjects\\semantic_analysis\\semantic.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\goyal\\.nuget\\packages\\microsoft.ml\\1.5.2\\microsoft.ml.1.5.2.nupkg.sha512",
     "C:\\Users\\goyal\\.nuget\\packages\\microsoft.ml.cpumath\\1.5.2\\microsoft.ml.cpumath.1.5.2.nupkg.sha512",
     "C:\\Users\\goyal\\.nuget\\packages\\microsoft.ml.dataview\\1.5.2\\microsoft.ml.dataview.1.5.2.nupkg.sha512",
+    "C:\\Users\\goyal\\.nuget\\packages\\microsoft.ml.mkl.redist\\1.5.2\\microsoft.ml.mkl.redist.1.5.2.nupkg.sha512",
+    "C:\\Users\\goyal\\.nuget\\packages\\microsoft.ml.timeseries\\1.5.2\\microsoft.ml.timeseries.1.5.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",

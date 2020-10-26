@@ -1,0 +1,16 @@
+Feedbacktext,value,total feedback,no_acc_word,Percent
+this is good,TRUE,15,3,20
+this is bad,FALSE,15,2,13.33333333
+horrible,FALSE,15,2,13.33333333
+terrible,FALSE,15,1,6.666666667
+good and nice,TRUE,15,4,26.66666667
+so nice,TRUE,15,2,13.33333333
+so bad,FALSE,15,2,13.33333333
+ok ok good,TRUE,15,3,20
+yucks,FALSE,15,2,13.33333333
+yucks and horrible,FALSE,15,3,20
+amazing,TRUE,15,1,6.666666667
+awesome,TRUE,15,2,13.33333333
+sweet,TRUE,15,2,13.33333333
+sweet and awesome,TRUE,15,3,20
+not so good,FALSE,15,1,6.666666667

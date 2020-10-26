@@ -17,3 +17,4 @@ E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.
 E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.csproj.CoreCompileInputs.cache
 E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.dll
 E:\codebase\dotNetProjects\semanticML.Model\obj\Debug\netstandard2.0\semanticML.Model.pdb
+E:\codebase\dotNetProjects\semanticML.Model\bin\Debug\netstandard2.0\MLModel.zip

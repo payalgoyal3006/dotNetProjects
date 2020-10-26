@@ -1,0 +1,170 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.ML;
+using Microsoft.ML.Data;
+using Microsoft.ML.Runtime;
+using Microsoft.ML.Trainers;
+
+
+namespace demo
+{
+    class FeedBackTrainingData
+    {
+        [LoadColumn(0), ColumnName("label")]
+        public bool IsGood { get; set; }
+
+        [LoadColumn(1)]
+        public string FeedBackText { get; set; }
+
+    }
+    class FeedBackPrediction
+    {
+        [ColumnName("predictedLabel")]
+        public bool IsGood { get; set; }
+    }
+    class Program
+    {
+       static List<FeedBackTrainingData> trainingdata = new List<FeedBackTrainingData>();
+        static List<FeedBackTrainingData> testdata = new List<FeedBackTrainingData>();
+        static void LoadTestData()
+        {
+            testdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "good",
+                IsGood = true
+            });
+            testdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "bad",
+                IsGood = false
+            });
+            testdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "nice",
+                IsGood = true
+            });
+            testdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "yuks",
+                IsGood = false
+            });
+            testdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "awesome",
+                IsGood = true
+            });
+            testdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "horrible",
+                IsGood = true
+            });
+        }
+
+        static void LoadTrainingData()
+        {
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "this is good",
+                IsGood = true
+            });
+
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "this is bad",
+                IsGood = false
+            });
+
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "not so good ok ok ",
+                IsGood = true
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "this is horrible",
+                IsGood = false
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "this is nice",
+                IsGood = true
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "nice and good",
+                IsGood = true
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "very bad",
+                IsGood = false
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "this is yuks",
+                IsGood = false
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "awesome",
+                IsGood = true
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "sweet and nice",
+                IsGood = true
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "bad like hell",
+                IsGood = false
+            });
+            trainingdata.Add(new FeedBackTrainingData()
+            {
+                FeedBackText = "bad and yuks",
+                IsGood = false
+            });
+        }
+        static void Main(string[] args)
+        {
+            LoadTrainingData();
+
+            //Create MLContext
+            MLContext mlContext = new MLContext();
+
+            IDataView dataView = mlContext.Data.LoadFromEnumerable<FeedBackTrainingData>(trainingdata);
+
+            var pipeline = mlContext.Transforms.Text.FeaturizeText("FeedBackText", "Features")
+                .Append(mlContext.BinaryClassification.Trainers
+                .FastTree(numberOfTrees: 50,numberOfLeaves: 50,  minimumExampleCountPerLeaf: 1));
+
+            var model = pipeline.Fit(dataView);
+
+            LoadTestData();
+            IDataView dataView1 = mlContext.Data.LoadFromEnumerable<FeedBackTrainingData>(testdata);
+            var predictions = model.Transform(dataView1);
+            var metrics = mlContext.BinaryClassification.Evaluate(predictions, "Label");
+            Console.WriteLine(metrics.Accuracy);
+            Console.Read();
+            Console.WriteLine("Enter a feedback string");
+            string feedbackstring = Console.Read().ToString();
+
+            // Load Trained Model
+            DataViewSchema predictionPipelineSchema;
+            ITransformer predictionPipeline = mlContext.Model.Load("model", out predictionPipelineSchema);
+            // Create PredictionEngines
+            PredictionEngine<FeedBackTrainingData, FeedBackPrediction> predictionEngine = mlContext.Model.CreatePredictionEngine<FeedBackTrainingData, FeedBackPrediction>(predictionPipeline);
+            //var predictionFunction = model.MakePredictionFunction<FeedBackTrainingData, FeedBackPrediction>(mlContext);
+
+            var feedbackinput = new FeedBackTrainingData();
+
+            feedbackinput.FeedBackText = feedbackstring;
+
+            var feedbackpredicted = predictionEngine.Predict(feedbackinput);
+            Console.WriteLine("Predicted :- " + feedbackpredicted.IsGood);
+            Console.ReadLine();
+
+        }
+    }
+}
+

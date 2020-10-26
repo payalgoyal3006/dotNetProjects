@@ -1,0 +1,12 @@
+C:\Users\goyal\source\repos\stock_prediction\bin\Debug\netcoreapp3.1\stock_prediction.exe
+C:\Users\goyal\source\repos\stock_prediction\bin\Debug\netcoreapp3.1\stock_prediction.deps.json
+C:\Users\goyal\source\repos\stock_prediction\bin\Debug\netcoreapp3.1\stock_prediction.runtimeconfig.json
+C:\Users\goyal\source\repos\stock_prediction\bin\Debug\netcoreapp3.1\stock_prediction.runtimeconfig.dev.json
+C:\Users\goyal\source\repos\stock_prediction\bin\Debug\netcoreapp3.1\stock_prediction.dll
+C:\Users\goyal\source\repos\stock_prediction\bin\Debug\netcoreapp3.1\stock_prediction.pdb
+C:\Users\goyal\source\repos\stock_prediction\obj\Debug\netcoreapp3.1\stock_prediction.csprojAssemblyReference.cache
+C:\Users\goyal\source\repos\stock_prediction\obj\Debug\netcoreapp3.1\stock_prediction.AssemblyInfoInputs.cache
+C:\Users\goyal\source\repos\stock_prediction\obj\Debug\netcoreapp3.1\stock_prediction.AssemblyInfo.cs
+C:\Users\goyal\source\repos\stock_prediction\obj\Debug\netcoreapp3.1\stock_prediction.dll
+C:\Users\goyal\source\repos\stock_prediction\obj\Debug\netcoreapp3.1\stock_prediction.pdb
+C:\Users\goyal\source\repos\stock_prediction\obj\Debug\netcoreapp3.1\stock_prediction.genruntimeconfig.cache

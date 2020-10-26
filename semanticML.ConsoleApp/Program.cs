@@ -2,7 +2,6 @@
 
 using System;
 using SemanticML.Model;
-using System.Collections.Generic;
 
 namespace SemanticML.ConsoleApp
 {
@@ -10,22 +9,24 @@ namespace SemanticML.ConsoleApp
     {
         static void Main(string[] args)
         {
-           
-
-
-
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {
                 Feedbacktext = @"this is good",
+                Value = true,
+                Total_feedback = 15F,
+                No_acc_word = 3F,
             };
 
             // Make a single prediction on the sample data and print results
             var predictionResult = ConsumeModel.Predict(sampleData);
 
-            Console.WriteLine("Using model to make single prediction -- Comparing actual Value with predicted Value from sample data...\n\n");
+            Console.WriteLine("Using model to make single prediction -- Comparing actual Percent with predicted Percent from sample data...\n\n");
             Console.WriteLine($"Feedbacktext: {sampleData.Feedbacktext}");
-            Console.WriteLine($"\n\nPredicted Value value {predictionResult.Prediction} \nPredicted Value scores: [{String.Join(",", predictionResult.Score)}]\n\n");
+            Console.WriteLine($"Value: {sampleData.Value}");
+            Console.WriteLine($"Total_feedback: {sampleData.Total_feedback}");
+            Console.WriteLine($"No_acc_word: {sampleData.No_acc_word}");
+            Console.WriteLine($"\n\nPredicted Percent value {predictionResult.Prediction} \nPredicted Percent scores: [{String.Join(",", predictionResult.Score)}]\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();
         }
